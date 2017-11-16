@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "136676391582",
+    "firebase_url": "https://red-ciudadana-f31ed.firebaseio.com",
+    "project_id": "red-ciudadana-f31ed",
+    "storage_bucket": "red-ciudadana-f31ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136676391582:android:c98d3268330bf34a",
+        "android_client_info": {
+          "package_name": "com.bobygoma.redciudadana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136676391582-k8hj778806eesldh8m1eoq6rgv5naoep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bobygoma.redciudadana",
+            "certificate_hash": "53d2844c37fb935948794b574397cffb0ab9769e"
+          }
+        },
+        {
+          "client_id": "136676391582-5l202do69akeocbuo5itkn3udau3ptou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRIRsnH3jvmBnzt9N8eGiOOLMBXjB_93k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136676391582-5l202do69akeocbuo5itkn3udau3ptou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

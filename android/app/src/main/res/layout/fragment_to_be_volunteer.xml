@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context="com.bobygoma.redciudadana.ToBeVolunteerFragment">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/what_kind_of_emergency_are_you_able_to_attend"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rounded_yellow"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkBoxFainting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/fainting" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkBoxHeartAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/heart_attack" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkBoxInjuredAccident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/injured_accident" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkBoxOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/other" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkBoxPanic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/panico" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:layout_alignTop="@+id/textViewMaxDistanceKm"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@color/yellow" />
+
+    <TextView
+        android:id="@+id/textViewMaxDistanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/rango_de_atencion_de_emergencia" />
+
+        <TextView
+            android:id="@+id/textViewMaxDistanceKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMaxDistanceText"
+            android:layout_toEndOf="@+id/seekBar"
+            android:layout_toRightOf="@+id/seekBar" />
+
+
+        <TextView
+            android:id="@+id/textViewLastRCPTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/last_rcp_training"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewLastRCPTrainingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLastRCPTraining"
+        android:layout_centerHorizontal="true"
+        android:text="@string/insert_date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewRangoHorarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLastRCPTraining"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/horarios_disponible"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewAvailableStartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAvailableEndTime"
+        android:layout_alignBottom="@+id/textViewAvailableEndTime"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/textViewAvailableEndTime"
+        android:layout_toStartOf="@+id/textViewAvailableEndTime"
+        android:text="@string/hasta" />
+
+    <TextView
+        android:id="@+id/textViewAvailableStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRangoHorarios"
+        android:layout_centerHorizontal="true"
+        android:text="@string/insert_date" />
+
+    <TextView
+        android:id="@+id/textViewAvailableEndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAvailableStartTime"
+        android:layout_alignBottom="@+id/textViewAvailableStartTime"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/textViewAvailableStartTime"
+        android:layout_toStartOf="@+id/textViewAvailableStartTime"
+        android:text="@string/desde"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textViewAvailableEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAvailableEndText"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textViewAvailableEndText"
+        android:layout_toRightOf="@+id/textViewAvailableEndText"
+        android:text="@string/insert_date" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_rounded_yellow"
+        android:text="@string/save" />
+</RelativeLayout>

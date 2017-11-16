@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/marker_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textViewSendingAlertFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sending_alert_for"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textViewEmergencyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_view_rounded"
+            android:padding="10dp"
+            android:text="Desmayo"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/textViewLocatedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/located_in"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_view_rounded"
+            android:padding="10dp"
+            android:text="Guatemala 236"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/textViewEmergencySentTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emergency_sent_to"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textViewAmountOfUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X Users " />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/triangle_marker" />
+
+</RelativeLayout>

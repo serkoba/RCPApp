@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Red Ciudadana</string>
+    <string name="google_maps_key">AIzaSyBRIRsnH3jvmBnzt9N8eGiOOLMBXjB_93k</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ask_for_help">Pedir ayuda</string>
+    <string name="ver_emergencia">Ver Emergencia</string>
+    <string name="to_be_volunteer">Ser Voluntario</string>
+    <string name="information">Información</string>
+    <string name="emergencies">Emergencias</string>
+    <string name="asking_for_help">Pidiendo ayuda</string>
+    <string name="the_request_for_help_is_due_to">El pedido de ayuda es debido a …</string>
+    <string name="fainting">Desmayo</string>
+    <string name="heart_attack">Paro cardíaco</string>
+    <string name="injured_accident">Herido / Accidente</string>
+    <string name="other">Otro / No se describirlo</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="address">Dirección</string>
+    <string name="phone_number">Número de teléono:</string>
+    <string name="last_name">Apellido:</string>
+    <string name="first_name">Nombre:</string>
+    <string name="logout">Salir</string>
+    <string name="please_wait">Por favor espere…</string>
+
+    <string name="grant_location_access_dialog_title">Permitir el acceso a su ubicación.</string>
+    <string name="grant_location_access_dialog_message">¡Necesitamos su ubicación para utilizar todas las funciones de la aplicación! Por favor, presione Permitir en la pantalla siguiente.</string>
+    <string name="grant_location_access_denied_toast">¡Necesitamos su ubicación para utilizar todas las funciones de la aplicación! Algunas funciones se desactivarán.</string>
+    <string name="ok">OK</string>
+    <string name="what_kind_of_emergency_are_you_able_to_attend">¿Qué tipo de emergencia puedes atender?</string>
+    <string name="login">Ingresar</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="save">Guardar</string>
+    <string name="update">Actualizar</string>
+    <string name="last_rcp_training">Ultima capacitación de RCP</string>
+    <string name="insert_date">Ingresar Fecha</string>
+    <string name="sending_alert_for">Enviando alerta para:</string>
+    <string name="located_in">Ubicado en:</string>
+    <string name="emergency_sent_to">Se ha enviado a:</string>
+    <string name="users">Usuarios</string>
+    <string name="person_who_needs_help">Persona que necesita ayuda:</string>
+    <string name="rango_de_atencion_de_emergencia">Rango de atención de emergencia:</string>
+    <string name="km">km</string>
+    <string name="perfil_de_voluntario">Perfil de voluntario</string>
+    <string name="perfil">Perfil</string>
+    <string name="edit">Edit</string>
+    <string name="otro">Otro</string>
+    <string name="atendida">Atendida</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="unknown">desconocida</string>
+    <string name="emergency_canceled">Emergencia cancelada</string>
+    <string name="emergency_finished">Emergencia Finalizada</string>
+    <string name="emergency_false_alarm">Emergencia marcada como falsa.</string>
+    <string name="desde">Desde:</string>
+    <string name="hasta">Hasta:</string>
+    <string name="horarios_disponible">Horarios disponible:</string>
+    <string name="ingrese_rango_emergencia">Ingrese el rango horario en que esta disponible para recibir emergencias.</string>
+    <string name="ahora_eres_voluntario">Ahora eres Voluntario!</string>
+    <string name="error_registro_voluntario">No ha sido posible registrarte como voluntario. Vuelve a intentarlo mas tarde.</string>
+    <string name="direccion">Ingrese la dirección donde ocurre la emergencia:</string>
+    <string name="ingrese_su_direccion">Ingrese su dirección</string>
+    <string name="panico">Pánico</string>
+    <string name="falsa_alarma">Falsa Alarma</string>
+    <string name="cancelar_emergencia">¿Está seguro que quiere cancelar ésta emergencia?</string>
+    <string name="finalizar_emergencia">¿Está seguro que quiere finalizar ésta emergencia?</string>
+    <string name="falsa_emergencia">¿Está seguro que quiere marcar como falsa ésta emergencia?</string>
+    <string name="no">No</string>
+    <string name="si">Si</string>
+    <string name="boton_de_panico">Botón de pánico!</string>
+    <string name="info_text"><![CDATA[RCP es una aplicación que conecta el pedido de ayuda de una persona
+con voluntarios en primeros auxilios que estén más próximos utilizando
+la posición GPS o ingresando una dirección.<br/><br/>
+
+¡IMPORTANTE!<br/>
+La aplicación no debe ser usada como primera medida de pedido de
+ayuda. Ante una emergencia, siempre deben usarse los medios oficiales,
+como el 911 o el número local de emergencias. Luego recomendamos usar
+la aplicación RCP.<br/><br/>
+
+Para realizar un pedido de ayuda solo deberá presionar el botón de
+pedido, se le ofrecerán algunas opciones de tipo de emergencia y el
+sistema aguardará a que su dispositivo se conecte con la red GPS para
+enviar la solicitud.<br/><br/>
+
+Los usuarios que estén registrados como voluntarios recibirán la
+notificación de pedido de ayuda junto con la información de la
+posición GPS o dirección y el tipo de emergencia. Cada voluntario
+podrá aceptar la solicitud y acudir al lugar.<br/><br/>
+
+Si una persona realiza falsas alarmas será penalizado. A los reportes
+de falsa alarma el usuario sera bloqueado del servicio.<br/><br/>
+
+Un usuario podrá cancelar el pedido de ayuda en cualquier momento.<br/><br/>
+
+Los usuarios interesados en ser voluntarios solo deben activarlo
+dentro de la aplicación y configurar algunas opciones parar recibir
+las notificaciones y podrán ver en el mapa todos los pedidos de ayuda
+que se encuentren vigentes.]]></string>
+    <string name="informacion_actualizada">Información actualizada</string>
+    <string name="error_al_actualizar">Error al actualizar</string>
+    <string name="Encienda_gps">Encienda su GPS para obtener su posición</string>
+    <string name="error_alerta_panico">No se pudo enviar el alerta de pánico!</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="emergencia_panico_enviada">Su aviso de pánico ha sido enviado!</string>
+    <string name="encienda_gps">Encienda su GPS para obtener su posición</string>
+    <string name="contrasenia_invalida">Usuario o contraseña inválida</string>
+</resources>

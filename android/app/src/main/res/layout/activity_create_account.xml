@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context="com.bobygoma.redciudadana.CreateAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/first_name"
+            android:id="@+id/textViewFirstName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextFirstName"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_alignLeft="@+id/textViewFirstName"
+            android:layout_alignStart="@+id/textViewFirstName"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewLastName"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_alignLeft="@+id/editTextFirstName"
+            android:layout_alignStart="@+id/editTextFirstName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLastName"
+            android:layout_below="@+id/textViewLastName"
+            android:layout_alignLeft="@+id/textViewLastName"
+            android:layout_alignStart="@+id/textViewLastName"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/email"
+            android:id="@+id/textViewMail"
+            android:layout_below="@+id/editTextLastName"
+            android:layout_alignLeft="@+id/editTextLastName"
+            android:layout_alignStart="@+id/editTextLastName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextEmail"
+            android:layout_below="@+id/textViewMail"
+            android:layout_alignLeft="@+id/textViewMail"
+            android:layout_alignStart="@+id/textViewMail"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/phone_number"
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_alignLeft="@+id/editTextEmail"
+            android:layout_alignStart="@+id/editTextEmail" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_below="@+id/textViewPhoneNumber"
+            android:layout_alignLeft="@+id/textViewPhoneNumber"
+            android:layout_alignStart="@+id/textViewPhoneNumber"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/address"
+            android:id="@+id/textViewAddress"
+            android:layout_below="@+id/editTextPhoneNumber"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAddress"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/password"
+            android:id="@+id/textViewPassword"
+            android:layout_below="@+id/editTextAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPassword"
+            android:layout_below="@+id/textViewPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:id="@+id/buttonSignUp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_rounded_yellow" />
+    </RelativeLayout>
+</FrameLayout>

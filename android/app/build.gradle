@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'RedCiudadana'
+            keyPassword 'redciudadana.'
+            storeFile file('C:/Users/Daniel/.android/releaseKeystoreRedCiudadana.jks')
+            storePassword 'redciudadana'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.bobygoma.redciudadana"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:mediarouter-v7:25.3.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'com.google.android.gms:play-services:10.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'io.nlopez.smartlocation:library:3.3.1'
+    compile 'io.nlopez.smartlocation:rx:3.3.1'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
