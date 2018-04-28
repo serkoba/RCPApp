@@ -1,11 +1,9 @@
 <resources>
     <string name="app_name">Red Ciudadana</string>
-    <string name="google_maps_key">AIzaSyBRIRsnH3jvmBnzt9N8eGiOOLMBXjB_93k</string>
+    <string name="google_maps_key">AIzaSyAQRX6TbLNZdZKbk4Xj7bG9Q8uaFu6zdak</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ask_for_help">Pedir ayuda</string>
     <string name="ver_emergencia">Ver Emergencia</string>
     <string name="to_be_volunteer">Ser Voluntario</string>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/red"
     android:padding="20dp"
-    tools:context="com.bobygoma.redciudadana.AskingForHelpFragment">
+    tools:context="com.pixeldifusiones.redciudadana.AskingForHelpFragment">
 
     <TextView
         android:id="@+id/textView"

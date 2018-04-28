@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "136676391582",
-    "firebase_url": "https://red-ciudadana-f31ed.firebaseio.com",
-    "project_id": "red-ciudadana-f31ed",
-    "storage_bucket": "red-ciudadana-f31ed.appspot.com"
+    "project_number": "401626239053",
+    "firebase_url": "https://redciudadanarcp.firebaseio.com",
+    "project_id": "redciudadanarcp",
+    "storage_bucket": "redciudadanarcp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:136676391582:android:c98d3268330bf34a",
+        "mobilesdk_app_id": "1:401626239053:android:99fc6453d699081b",
         "android_client_info": {
-          "package_name": "com.bobygoma.redciudadana"
+          "package_name": "com.pixeldifusiones.redciudadana"
         }
       },
       "oauth_client": [
         {
-          "client_id": "136676391582-k8hj778806eesldh8m1eoq6rgv5naoep.apps.googleusercontent.com",
+          "client_id": "401626239053-dkmujduh57r9b13i9pk8muah86pjkuku.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.bobygoma.redciudadana",
+            "package_name": "com.pixeldifusiones.redciudadana",
             "certificate_hash": "53d2844c37fb935948794b574397cffb0ab9769e"
           }
         },
         {
-          "client_id": "136676391582-5l202do69akeocbuo5itkn3udau3ptou.apps.googleusercontent.com",
+          "client_id": "401626239053-fb2l0fpot498a94jjlmg2tidbvtbe806.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBRIRsnH3jvmBnzt9N8eGiOOLMBXjB_93k"
+          "current_key": "AIzaSyAQRX6TbLNZdZKbk4Xj7bG9Q8uaFu6zdak"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "136676391582-5l202do69akeocbuo5itkn3udau3ptou.apps.googleusercontent.com",
+              "client_id": "401626239053-fb2l0fpot498a94jjlmg2tidbvtbe806.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

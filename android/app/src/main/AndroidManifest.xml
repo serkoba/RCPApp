@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bobygoma.redciudadana">
+    package="com.pixeldifusiones.redciudadana">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".RedCiudadanaApplication"
+        android:name="com.pixeldifusiones.redciudadana.RedCiudadanaApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_notification"
         android:label="@string/app_name"
@@ -17,10 +17,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name="com.pixeldifusiones.redciudadana.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.pixeldifusiones.redciudadana.SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -29,7 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name="com.pixeldifusiones.redciudadana.LoginActivity"
             android:screenOrientation="portrait"/>
 
         <meta-data
@@ -43,23 +49,23 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
         <!-- [START firebase_service] -->
-        <service android:name=".services.MyFirebaseMessagingService">
+        <service android:name="com.pixeldifusiones.redciudadana.services.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <!-- [END firebase_service] -->
         <!-- [START firebase_iid_service] -->
-        <service android:name=".services.MyFirebaseInstanceIDService">
+        <service android:name="com.pixeldifusiones.redciudadana.services.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
         <!-- [END firebase_iid_service] -->
-        <activity android:name=".CreateAccountActivity" />
+        <activity android:name="com.pixeldifusiones.redciudadana.CreateAccountActivity" />
 
         <service
-            android:name=".services.SendLocationService"
+            android:name="com.pixeldifusiones.redciudadana.services.SendLocationService"
             android:enabled="true"
             android:exported="true"/>
     </application>
