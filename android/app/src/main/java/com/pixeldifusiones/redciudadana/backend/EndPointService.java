@@ -21,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class EndPointService {
     //public static final String BASE_URL = "http://redciudadana.hopto.org/";
-    public static final String BASE_URL_DEV = "http://104.154.60.179:8080/";
+    public static final String BASE_URL_DEV = "http://35.196.76.161:8080/";
     public static final String BASE_URL_PROD = "http://104.198.175.166:8080/";
 
     private static EndPointService mInstance;

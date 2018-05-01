@@ -14,11 +14,11 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.pixeldifusiones.redciudadana.backend.EmergencyNotification;
 import com.pixeldifusiones.redciudadana.controllers.AccountController;
 import com.pixeldifusiones.redciudadana.custom_views.LoadingFragmentDialog;
 import com.pixeldifusiones.redciudadana.utils.Commons;
-import com.google.gson.Gson;
 
 import java.util.Calendar;
 import java.util.List;
@@ -81,15 +81,18 @@ public class AskingForHelpFragment extends Fragment implements View.OnClickListe
         view.findViewById(R.id.buttonInjuredAccident).setOnClickListener(this);
         view.findViewById(R.id.buttonOther).setOnClickListener(this);
 
-        mLastLocation = ((BaseActivity)getActivity()).mLocationService.getCurrentLocation();
+        mLastLocation = ((BaseActivity) getActivity()).mLocationService.getCurrentLocation();
         mEditTextAddress = (EditText) view.findViewById(R.id.editTextAddress);
-        if(mLastLocation != null) {
+        if (mLastLocation != null) {
             SmartLocation.with(getContext()).geocoding()
                     .reverse(mLastLocation, new OnReverseGeocodingListener() {
                         @Override
                         public void onAddressResolved(Location location, List<Address> list) {
-                            if (list != null && list.size() > 0 && list.get(0).getMaxAddressLineIndex() > 0) {
-                                mEditTextAddress.setText(list.get(0).getAddressLine(0));
+                            if (list != null && list.size() > 0 && list.get(0).getMaxAddressLineIndex() != -1) {
+                                Address address = list.get(0);
+                                String thoroughfare = address.getThoroughfare() != null ? address.getThoroughfare() : "";
+                                String subThoroughfare = address.getSubThoroughfare() != null ? address.getSubThoroughfare() : "";
+                                mEditTextAddress.setText(String.format("%s %s", thoroughfare, subThoroughfare));
                             }
                         }
                     });
